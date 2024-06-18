@@ -1,0 +1,124 @@
+## QUESTION 1
+Python is a high-level programming language known for its simplicity and readability. Key features include dynamic typing, extensive libraries, and strong community support. It is popular for web development (Django), data analysis (Pandas), and scripting tasks.
+
+
+## QUESTION2 
+Windows: Download Python installer from python.org, run it, and check "Add Python to PATH" during installation. Verify by running python --version in Command Prompt.
+macOS/Linux: Python is pre-installed on most systems. Use package manager (brew for macOS, apt-get for Linux) or download from python.org. Verify with python3 --version or python --version in Terminal.
+
+
+
+## QUESTION 3
+print("Hello, World!")
+Basic Syntax Elements: print() is a function that outputs text to the console. Strings in Python are enclosed in quotes.
+
+
+
+## QUESTION 4 
+Data Types and Variables:
+
+Basic Data Types: Integer (int), Float (float), String (str), Boolean (bool), List (list), Tuple (tuple), Dictionary (dict).
+
+
+# Example of variables and data types
+num1 = 10
+num2 = 5.5
+name = "John"
+is_valid = True
+
+
+## QUESTION 5
+In Python, conditional statements like if, elif, and else help execute specific blocks of code based on conditions. For instance, if checks if a condition is true, elif adds additional conditions, and else provides a default action if none of the conditions are met.
+While Loop: Repeats a block of code while a condition is true.
+
+Conditional Statements:
+python
+
+# Example of if-else statement
+x = 10
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is less than or equal to 5")
+Loops:
+
+
+# Example of for loop
+for i in range(5):
+    print(i)
+
+
+
+## QUESTION 6
+Functions: Blocks of reusable code defined using def. Useful for organizing code and promoting reusability.
+
+
+# Example of a function
+def add_numbers(a, b):
+    return a + b
+
+# Calling the function
+result = add_numbers(5, 3)
+print("Sum:", result)  
+
+
+
+## QUESTION 7
+Lists: Ordered collections of items accessed by index.
+Dictionaries: Key-value pairs accessed by keys.
+
+
+# Example of list and dictionary
+numbers = [1, 2, 3, 4, 5]
+person = {"name": "John", "age": 30, "city": "New York"}
+
+# Operations
+print(numbers[0])        
+print(person["name"])
+
+
+
+## QUESTION 8
+Exception Handling: Handles errors gracefully using try, except, and optionally finally blocks.
+
+
+# Example of exception handling
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Error: Division by zero")
+finally:
+    print("Execution completed")
+
+
+
+
+## QUESTION 9
+Modules are files containing code that can be imported and reused in other scripts using the import statement.
+
+Packages are directories of modules with an __init__.py file, organizing modules into a hierarchical structure to manage large codebases.
+
+Importing and Using a Module:
+To use a module, import it with import followed by the module name. Access its functions and variables using dot notation (.).
+
+# Example of importing and using a module
+import math
+
+# Using math module
+print(math.sqrt(16))   # Output: 4.0 (square root of 16)
+
+
+
+
+## QUESTION 10
+To read from a file, use open() with 'r' mode. Use file.read() to get the file content.While To write to a file, use open() with 'w' mode. Use file.write() or file.
+# Example of file reading
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+# Example of file writing
+data = ["Apple", "Banana", "Orange"]
+with open("fruits.txt", "w") as file:
+    for fruit in data:
+        file.write(fruit + "\n")
